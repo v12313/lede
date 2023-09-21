@@ -1,0 +1,23 @@
+
+
+name: Build AX6S firmware
+
+on:
+ # push:
+ #   branches:
+  #    - master
+  workflow_dispatch:
+
+jobs:
+
+  build_openwrt:
+    
+    name: build openwrt firmware
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+        
+      
